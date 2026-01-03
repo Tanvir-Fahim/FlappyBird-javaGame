@@ -188,21 +188,30 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener{
 
     @Override
     public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-            velocityY = -9;
 
-            if (gameOver){
-                // restart the game by resetting the game conditions.
-                bird.y = birdY;
-                velocityY = 0;
-                pipes.clear();
-                score = 0;
-                gameOver = false;
-                gameLoop.start();
-                placePipesTimer.start();
-            }
-       }
+        // Jump (SPACE)
+        if (e.getKeyCode() == KeyEvent.VK_SPACE && !gameOver) {
+            velocityY = -9;
+        }
+
+        // Restart (R or r)
+        if (e.getKeyCode() == KeyEvent.VK_R && gameOver) {
+            restartGame();
+        }
     }
+
+    public void restartGame() {
+    bird.y = birdY;
+    velocityY = 0;
+    pipes.clear();
+    score = 0;
+    gameOver = false;
+
+    gameLoop.start();
+    placePipesTimer.start();
+}
+
+
 
     @Override
     public void keyTyped(KeyEvent e) {
