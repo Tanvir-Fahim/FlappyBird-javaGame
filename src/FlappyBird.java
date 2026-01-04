@@ -147,7 +147,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener{
 
             g.drawString(text, x, y);
 
-            g.setColor(Color.GREEN);
+            g.setColor(Color.BLUE);
             Font font2 = new Font("Arial", Font.PLAIN, 28);
             g.setFont(font2);
 
