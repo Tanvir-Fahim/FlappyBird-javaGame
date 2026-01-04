@@ -10,6 +10,9 @@ Java based logic with java swing Fontend.
 No extra framework used.
 Fully built from scratch.
 
+The game still need to be improved.
+It will be updating in future.
+Anyone feel free to contribute.
 
 Author: Md. Tanvir Fahim, github: https://github.com/Tanvir-Fahim
 Follow for more upcoming games. 
