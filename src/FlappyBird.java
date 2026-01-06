@@ -156,6 +156,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener{
             int y2 = y + 30;
 
             g.drawString(text2, x2,y2);
+            return;
         }
         else{
             g.drawString(String.valueOf((int) score), 10, 35);
